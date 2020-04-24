@@ -1,6 +1,6 @@
 # Covid19Tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6. and referenced the following github api (https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series)
 
 ## Development server
 
