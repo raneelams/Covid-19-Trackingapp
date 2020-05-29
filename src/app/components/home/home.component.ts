@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.dataService.getGlobalData().subscribe({
       next: (result) => {
-        console.log(result);
+        // console.log(result);
         this.globalData = result;
 
         result.forEach((cs) => {
@@ -90,6 +90,6 @@ export class HomeComponent implements OnInit {
 
       this.datatable.push([cs.country, value]);
     });
-    console.log(this.datatable);
+    // console.log(this.datatable);
   }
 }
