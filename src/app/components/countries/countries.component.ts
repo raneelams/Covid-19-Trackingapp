@@ -40,14 +40,20 @@ export class CountriesComponent implements OnInit {
           this.dateWiseData = result;
         })
       ),
-      this.service.getGlobalData().pipe(
-        map((result) => {
-          this.data = result;
-          this.data.forEach((cs) => {
-            this.countries.push(cs.country);
-          });
-        })
-      )
+      // this.service.getGlobalData().pipe(
+      //   map((result) => {
+      //     this.data = result;
+      //     this.data.forEach((cs) => {
+      //       this.countries.push(cs.country);
+      //     });
+      //   })
+      // )
+      this.service.getGlobalData().subscribe((result) => {
+        this.data = result;
+        this.data.forEach((cs) => {
+          this.countries.push(cs.country);
+        });
+      })
     ).subscribe({
       complete: () => {
         this.updateValues("India");
